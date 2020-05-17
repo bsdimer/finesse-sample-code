@@ -1,0 +1,5 @@
+https://community.cisco.com/t5/contact-center/post-survey-on-uccx-10/td-p/3458735
+https://developer.cisco.com/docs/finesse/#!upload-third-party-gadgets/upload-thirdparty-gadgets
+https://developer.cisco.com/docs/finesse/#!dialoginitiate-a-single-step-transfer/dialoginitiate-a-single-step-transfer
+https://developer.cisco.com/docs/finesse/#!sample-gadgets/sample-gadgets
+https://developer.cisco.com/docs/finesse/#!javascript-library

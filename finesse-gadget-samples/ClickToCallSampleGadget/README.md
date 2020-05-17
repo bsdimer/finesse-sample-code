@@ -7,7 +7,7 @@ This sample gadget contains the following files:
 
 	ClickToCall/
 		ClickToCall.css
-		ClickToCall.js
+		Transfer.js
 		ClickToCall.xml
     FinesseJavaScriptLibrary/
 		readme.txt
