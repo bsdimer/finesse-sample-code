@@ -11,6 +11,7 @@
 
     <modules>
         <module>survey-api</module>
+        <module>survey-api-spring</module>
     </modules>
     
 </project>
