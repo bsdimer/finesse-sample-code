@@ -13,7 +13,7 @@ spring:
     platform: postgres
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:surveyapi}
     username: ${DB_USER:surveyapi}
-    password: ${DB_PASSWORD:<omited>}
+    password: ${DB_PASSWORD:P@ssp0rt}
     driverClassName: org.postgresql.Driver
   servlet:
     multipart:
@@ -26,5 +26,9 @@ logging.level.org.springframework.web: DEBUG
 
 server:
   port: ${PORT:10000}
-  servlet:
-    context-path: /survey-api-spring-0.0.1-SNAPSHOT
+
+---
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://${DB_HOST:10.69.32.5}:${DB_PORT:5432}/${DB_NAME:surveyapi}

@@ -1,6 +1,7 @@
 package org.lanadvice.surveyapi.spring.service;
 
 import lombok.RequiredArgsConstructor;
+import org.lanadvice.surveyapi.spring.model.Question;
 import org.lanadvice.surveyapi.spring.model.Questionnaire;
 import org.lanadvice.surveyapi.spring.model.Survey;
 import org.lanadvice.surveyapi.spring.repository.QuestionRepository;
@@ -17,6 +18,7 @@ import java.text.MessageFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -62,8 +64,8 @@ public class QuestionnaireService {
                 .map(s -> MessageFormat.format("{0},{1},{2},{3},{4},{5}\n",
                         s.getId(),
                         s.getSource(),
-                        s.getQuestion().getId(),
-                        s.getQuestion().getText(),
+                        Optional.ofNullable(s.getQuestion()).map(Question::getId).orElse(0l),
+                        Optional.ofNullable(s.getQuestion()).map(Question::getText).orElse(""),
                         s.getAnswer(),
                         s.getCreated().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
                         )
